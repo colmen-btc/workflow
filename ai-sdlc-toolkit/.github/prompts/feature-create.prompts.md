@@ -1,1 +1,1 @@
-using the skill @sym:# Epic Generation Skill read through edi-mcp-server  product brief and ADR's and create the epic for EDI-MCP-CATALOG. Keep it precise.
+using the skill @sym:# Feature Generation Skill create development features for the EDI-MCP-CATALOG epic, link the relevant ADR's to it, update placeholder links.
