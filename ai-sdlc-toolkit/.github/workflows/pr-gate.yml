@@ -1,0 +1,45 @@
+name: PR Gate
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  quality:
+    name: Quality Checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run tests
+        run: echo "TODO: Add your test command here (e.g., pytest, npm test)"
+
+      - name: Check coverage
+        run: echo "TODO: Add coverage check (e.g., pytest --cov, nyc)"
+
+  security:
+    name: Security Checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Secrets scan
+        run: echo "TODO: Add secrets scanner (e.g., gitleaks, trufflehog)"
+
+      - name: Dependency scan
+        run: echo "TODO: Add dependency scanner (e.g., pip-audit, npm audit, trivy)"
+
+      - name: SAST
+        run: echo "TODO: Add SAST scanner (e.g., semgrep, bandit, eslint-security)"
+
+  compliance:
+    name: Compliance Checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: License check
+        run: echo "TODO: Add license checker (e.g., license-checker, pip-licenses)"
+
+      - name: Verify signed commit
+        run: echo "TODO: Add commit signature verification"
