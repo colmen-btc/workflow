@@ -1,0 +1,426 @@
+<mxfile host="app.diagrams.net" version="21.0.0">
+  <diagram name="AI-Native SDLC — Swimlane" id="ai-sdlc-swimlane">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1340" pageHeight="1560" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- ===== TITLE ===== -->
+        <mxCell id="title" value="&lt;b style=&quot;font-size:16px;&quot;&gt;AI-Native SDLC — End to End&lt;/b&gt;&lt;br&gt;&lt;i&gt;Agents generate artifacts · Humans control every gate · GitHub is the single source of truth&lt;/i&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="10" y="10" width="1310" height="55" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== PHASE LABEL COLUMN (standalone cells) ===== -->
+        <mxCell id="ph_hdr" value="Phase" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="10" y="70" width="80" height="30" as="geometry"/>
+        </mxCell>
+        <!-- Phase 1: abs y 100-175 -->
+        <mxCell id="ph1" value="1. Prerequisites" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8f8f8;strokeColor=#aaaaaa;align=center;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="10" y="100" width="80" height="75" as="geometry"/>
+        </mxCell>
+        <!-- Phase 2: abs y 175-305 -->
+        <mxCell id="ph2" value="2. Initiative Setup" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8f8f8;strokeColor=#aaaaaa;align=center;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="10" y="175" width="80" height="130" as="geometry"/>
+        </mxCell>
+        <!-- Phase 3: abs y 305-435 -->
+        <mxCell id="ph3" value="3. Foundation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8f8f8;strokeColor=#aaaaaa;align=center;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="10" y="305" width="80" height="130" as="geometry"/>
+        </mxCell>
+        <!-- Phase 4: abs y 435-560 -->
+        <mxCell id="ph4" value="4. Epic Cycle ↺" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8f8f8;strokeColor=#aaaaaa;align=center;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="10" y="435" width="80" height="125" as="geometry"/>
+        </mxCell>
+        <!-- Phase 5: abs y 560-685 -->
+        <mxCell id="ph5" value="5. Feature Cycle ↺" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8f8f8;strokeColor=#aaaaaa;align=center;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="10" y="560" width="80" height="125" as="geometry"/>
+        </mxCell>
+        <!-- Phase 6: abs y 685-905 -->
+        <mxCell id="ph6" value="6. Build Cycle ↺" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8f8f8;strokeColor=#aaaaaa;align=center;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="10" y="685" width="80" height="220" as="geometry"/>
+        </mxCell>
+        <!-- Phase 7: abs y 905-1045 -->
+        <mxCell id="ph7" value="7. CI/CD (automated)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8f8f8;strokeColor=#aaaaaa;align=center;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="10" y="905" width="80" height="140" as="geometry"/>
+        </mxCell>
+        <!-- Phase 8: abs y 1045-1175 -->
+        <mxCell id="ph8" value="8. Release" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8f8f8;strokeColor=#aaaaaa;align=center;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="10" y="1045" width="80" height="130" as="geometry"/>
+        </mxCell>
+        <!-- Phase 9: abs y 1175-1285 -->
+        <mxCell id="ph9" value="9. Production (AWS)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8f8f8;strokeColor=#aaaaaa;align=center;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="10" y="1175" width="80" height="110" as="geometry"/>
+        </mxCell>
+        <!-- Phase 10: abs y 1285-1400 -->
+        <mxCell id="ph10" value="10. Post-Release" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8f8f8;strokeColor=#aaaaaa;align=center;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="10" y="1285" width="80" height="115" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== PO SWIMLANE (x=90, w=270, y=70, h=1330) ===== -->
+        <!-- Lane starts at abs y=70. Header 30px. Content starts at lane-y=30 / abs-y=100. -->
+        <mxCell id="lane_po" value="Product Owner" style="swimlane;startSize=30;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="90" y="70" width="270" height="1330" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 1 (lane y 30-105): mission.md -->
+        <mxCell id="p1_po_1" value="&lt;b&gt;mission.md&lt;br&gt;platform-brief.md&lt;/b&gt;&lt;br&gt;Human-authored — read-only context for agents" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="lane_po">
+          <mxGeometry x="10" y="35" width="250" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 2 (lane y 105-235): define goal + gate -->
+        <mxCell id="p2_po_1" value="Define initiative goal" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="lane_po">
+          <mxGeometry x="10" y="112" width="250" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2_po_g" value="◆ GATE&lt;br&gt;&lt;b&gt;PO confirms scope&lt;br&gt;+ success criteria&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" vertex="1" parent="lane_po">
+          <mxGeometry x="10" y="163" width="250" height="65" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 3 (lane y 235-365): no PO action -->
+        <mxCell id="p3_po_idle" value="—" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=#cccccc;" vertex="1" parent="lane_po">
+          <mxGeometry x="10" y="295" width="250" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 4 (lane y 365-490): idea + epic gate -->
+        <mxCell id="p4_po_1" value="Idea (anyone → PO)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="lane_po">
+          <mxGeometry x="10" y="370" width="250" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="p4_po_g" value="◆ GATE&lt;br&gt;&lt;b&gt;PO approves epic&lt;br&gt;→ Ready for Dev&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" vertex="1" parent="lane_po">
+          <mxGeometry x="10" y="420" width="250" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 5 (lane y 490-615): no PO action -->
+        <mxCell id="p5_po_idle" value="—" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=#cccccc;" vertex="1" parent="lane_po">
+          <mxGeometry x="10" y="545" width="250" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 6 (lane y 615-835): no PO action -->
+        <mxCell id="p6_po_idle" value="—" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=#cccccc;" vertex="1" parent="lane_po">
+          <mxGeometry x="10" y="715" width="250" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 7 (lane y 835-975): automated — no PO action -->
+        <mxCell id="p7_po_idle" value="(no action — automated)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#aaaaaa;fontStyle=2;" vertex="1" parent="lane_po">
+          <mxGeometry x="10" y="895" width="250" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 8 (lane y 975-1105): release gate -->
+        <mxCell id="p8_po_g" value="◆ GATE&lt;br&gt;&lt;b&gt;Release gate&lt;br&gt;checklist passes&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" vertex="1" parent="lane_po">
+          <mxGeometry x="10" y="985" width="250" height="65" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 9 (lane y 1105-1215): no PO action -->
+        <mxCell id="p9_po_idle" value="—" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=#cccccc;" vertex="1" parent="lane_po">
+          <mxGeometry x="10" y="1155" width="250" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 10 (lane y 1215-1330): no PO action -->
+        <mxCell id="p10_po_idle" value="—" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=#cccccc;" vertex="1" parent="lane_po">
+          <mxGeometry x="10" y="1260" width="250" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== BUILDER SWIMLANE (x=360, w=270, y=70, h=1330) ===== -->
+        <mxCell id="lane_bl" value="Builder" style="swimlane;startSize=30;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="360" y="70" width="270" height="1330" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 1: no Builder action -->
+        <mxCell id="p1_bl_idle" value="—" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=#cccccc;" vertex="1" parent="lane_bl">
+          <mxGeometry x="10" y="55" width="250" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 2: no Builder action -->
+        <mxCell id="p2_bl_idle" value="—" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=#cccccc;" vertex="1" parent="lane_bl">
+          <mxGeometry x="10" y="185" width="250" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 3 (lane y 235-365): accept ADRs + gate -->
+        <mxCell id="p3_bl_1" value="Accepts ADR decisions&lt;br&gt;Confirms repo setup" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="lane_bl">
+          <mxGeometry x="10" y="242" width="250" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="p3_bl_g" value="◆ GATE&lt;br&gt;&lt;b&gt;CI green + branch&lt;br&gt;protection verified&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" vertex="1" parent="lane_bl">
+          <mxGeometry x="10" y="298" width="250" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 4: no Builder action -->
+        <mxCell id="p4_bl_idle" value="—" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=#cccccc;" vertex="1" parent="lane_bl">
+          <mxGeometry x="10" y="440" width="250" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 5 (lane y 490-615): feature breakdown gate -->
+        <mxCell id="p5_bl_g" value="◆ GATE&lt;br&gt;&lt;b&gt;Confirms feature breakdown&lt;br&gt;→ Ready for Spec&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" vertex="1" parent="lane_bl">
+          <mxGeometry x="10" y="500" width="250" height="65" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 6 (lane y 615-835): review spec, PR, merge gate -->
+        <mxCell id="p6_bl_1" value="Reviews spec" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="lane_bl">
+          <mxGeometry x="10" y="623" width="250" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="p6_bl_2" value="Reviews PR" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="lane_bl">
+          <mxGeometry x="10" y="683" width="250" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="p6_bl_g" value="◆ GATE&lt;br&gt;&lt;b&gt;Approves + merges to main&lt;br&gt;(only human can merge)&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" vertex="1" parent="lane_bl">
+          <mxGeometry x="10" y="735" width="250" height="65" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 7: automated — no Builder action -->
+        <mxCell id="p7_bl_idle" value="(no action — automated)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#aaaaaa;fontStyle=2;" vertex="1" parent="lane_bl">
+          <mxGeometry x="10" y="895" width="250" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 8 (lane y 975-1105): release scope + staging sign-off -->
+        <mxCell id="p8_bl_1" value="Release scope planning" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="lane_bl">
+          <mxGeometry x="10" y="982" width="250" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="p8_bl_2" value="Staging sign-off" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="lane_bl">
+          <mxGeometry x="10" y="1030" width="250" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 9 (lane y 1105-1215): platform ops -->
+        <mxCell id="p9_bl_1" value="Platform engineers operate server&lt;br&gt;(runbooks: docs/runbooks/)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="lane_bl">
+          <mxGeometry x="10" y="1115" width="250" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 10 (lane y 1215-1330): monitor alerts -->
+        <mxCell id="p10_bl_1" value="Monitors alerts&lt;br&gt;Runs runbooks if issues&lt;br&gt;Closes monitoring window" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="lane_bl">
+          <mxGeometry x="10" y="1225" width="250" height="55" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== AGENT SWIMLANE (x=630, w=310, y=70, h=1330) ===== -->
+        <mxCell id="lane_ag" value="Agent (Skills)" style="swimlane;startSize=30;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="630" y="70" width="310" height="1330" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 1: reads only -->
+        <mxCell id="p1_ag_1" value="reads only — no agent writes here" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#999999;fontStyle=2;" vertex="1" parent="lane_ag">
+          <mxGeometry x="10" y="55" width="290" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 2: draft initiative docs -->
+        <mxCell id="p2_ag_1" value="Drafts initiative.md,&lt;br&gt;product-brief.md, roadmap.md&lt;br&gt;from PO input and mission context" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="lane_ag">
+          <mxGeometry x="10" y="112" width="290" height="65" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 3: ADRs + Graphify -->
+        <mxCell id="p3_ag_1" value="&lt;b&gt;Skill: adr-maintenance&lt;/b&gt;&lt;br&gt;Scaffolds ADR-001…006" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="lane_ag">
+          <mxGeometry x="10" y="242" width="290" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="p3_ag_2" value="graphify . → GRAPH_REPORT.md&lt;br&gt;(committed — agents query this before every task)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="lane_ag">
+          <mxGeometry x="10" y="300" width="290" height="55" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 4: epic-generation -->
+        <mxCell id="p4_ag_1" value="&lt;b&gt;Skill: epic-generation&lt;/b&gt;&lt;br&gt;Drafts epic.md&lt;br&gt;(uses GRAPH_REPORT + ADR context)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="lane_ag">
+          <mxGeometry x="10" y="368" width="290" height="65" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 5: feature-generation -->
+        <mxCell id="p5_ag_1" value="&lt;b&gt;Skill: feature-generation&lt;/b&gt;&lt;br&gt;Drafts feature.md&lt;br&gt;(uses GRAPH_REPORT + ADR scope)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="lane_ag">
+          <mxGeometry x="10" y="495" width="290" height="65" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 6: Explore → Plan → Spec → Code → PR -->
+        <mxCell id="p6_ag_1" value="Explore → reads GRAPH_REPORT.md first&lt;br&gt;&lt;i&gt;(rule: never skip Explore phase)&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="lane_ag">
+          <mxGeometry x="10" y="620" width="290" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="p6_ag_2" value="Plan → writes Spec&lt;br&gt;(docs/specs/ — references ADRs)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="lane_ag">
+          <mxGeometry x="10" y="677" width="290" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="p6_ag_3" value="Code on feature branch&lt;br&gt;Opens PR linked to Task issue&lt;br&gt;&lt;i&gt;(rule: never claim done w/o passing tests)&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="lane_ag">
+          <mxGeometry x="10" y="733" width="290" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 7: no AI agent action -->
+        <mxCell id="p7_ag_idle" value="(no AI agent action)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#aaaaaa;fontStyle=2;" vertex="1" parent="lane_ag">
+          <mxGeometry x="10" y="895" width="290" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 8: draft release notes -->
+        <mxCell id="p8_ag_1" value="Drafts release notes&lt;br&gt;from merged PRs + epic descriptions" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="lane_ag">
+          <mxGeometry x="10" y="982" width="290" height="55" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 9: end-user consumers -->
+        <mxCell id="p9_ag_1" value="AI agents / MCP clients&lt;br&gt;consume tools (end-users of this server)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="lane_ag">
+          <mxGeometry x="10" y="1115" width="290" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 10: no agent action -->
+        <mxCell id="p10_ag_idle" value="—" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=#cccccc;" vertex="1" parent="lane_ag">
+          <mxGeometry x="10" y="1255" width="290" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== SYSTEM (GIT / CI-CD / AWS) SWIMLANE (x=940, w=380, y=70, h=1330) ===== -->
+        <mxCell id="lane_sys" value="System  (Git / CI-CD / AWS)" style="swimlane;startSize=30;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="940" y="70" width="380" height="1330" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 1: no system action -->
+        <mxCell id="p1_sys_idle" value="—" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=#cccccc;" vertex="1" parent="lane_sys">
+          <mxGeometry x="10" y="55" width="360" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 2: GitHub milestones -->
+        <mxCell id="p2_sys_1" value="GitHub Milestones + Labels + Project created" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;" vertex="1" parent="lane_sys">
+          <mxGeometry x="10" y="188" width="360" height="45" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 3: repo scaffold + branch protection -->
+        <mxCell id="p3_sys_1" value="Repo scaffold: src/ infra/ .github/&lt;br&gt;docs/specs/ docs/runbooks/" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;" vertex="1" parent="lane_sys">
+          <mxGeometry x="10" y="242" width="360" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="p3_sys_2" value="Branch protection + CI skeleton (.github/workflows/)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;" vertex="1" parent="lane_sys">
+          <mxGeometry x="10" y="300" width="360" height="45" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 4: GitHub Epic Issue -->
+        <mxCell id="p4_sys_1" value="GitHub Issue (type: Epic) + Milestone" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;" vertex="1" parent="lane_sys">
+          <mxGeometry x="10" y="373" width="360" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 5: GitHub Feature sub-issues -->
+        <mxCell id="p5_sys_1" value="GitHub Sub-issues (type: Feature) linked to Epic" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;" vertex="1" parent="lane_sys">
+          <mxGeometry x="10" y="498" width="360" height="55" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 6: CI on PR -->
+        <mxCell id="p6_sys_1" value="CI on PR: Build Docker image (python:3.12-slim, mcpuser UID 10000)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;" vertex="1" parent="lane_sys">
+          <mxGeometry x="10" y="620" width="360" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="p6_sys_2" value="Unit tests + SAST scan + License check" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;" vertex="1" parent="lane_sys">
+          <mxGeometry x="10" y="672" width="360" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="p6_sys_3" value="Terraform plan → post plan output to PR" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;" vertex="1" parent="lane_sys">
+          <mxGeometry x="10" y="724" width="360" height="45" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 7: CD on merge to main -->
+        <mxCell id="p7_sys_1" value="Build + tag image → Push to ECR" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;" vertex="1" parent="lane_sys">
+          <mxGeometry x="10" y="843" width="360" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="p7_sys_2" value="Terraform apply: AgentCore + API GW /mcp + SSM + S3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;" vertex="1" parent="lane_sys">
+          <mxGeometry x="10" y="890" width="360" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="p7_sys_3" value="Smoke test GET /mcp/health/ready → Deploy staging&lt;br&gt;PROFILE: local | standalone | edi-saas | edi-dedicated | outposts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="lane_sys">
+          <mxGeometry x="10" y="942" width="360" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 8: deploy prod + SBOM -->
+        <mxCell id="p8_sys_1" value="Deploy to production + SBOM generate + publish" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;" vertex="1" parent="lane_sys">
+          <mxGeometry x="10" y="1060" width="360" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 9: AWS production topology -->
+        <mxCell id="p9_sys_1" value="API GW /mcp → Bedrock AgentCore (ECR image) → OSDU APIs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;" vertex="1" parent="lane_sys">
+          <mxGeometry x="10" y="1115" width="360" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="p9_sys_2" value="SSM / Secrets Mgr + S3 + CloudWatch" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="lane_sys">
+          <mxGeometry x="10" y="1167" width="360" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Phase 10: monitoring -->
+        <mxCell id="p10_sys_1" value="CloudWatch monitoring window&lt;br&gt;No critical issues → epic cycle continues ↺" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;" vertex="1" parent="lane_sys">
+          <mxGeometry x="10" y="1225" width="360" height="55" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== CROSS-LANE EDGES (parent="1") ===== -->
+
+        <!-- [2] Init Setup: PO define goal → Agent draft docs -->
+        <mxCell id="e1" value="input" style="edgeStyle=orthogonalEdgeStyle;fontSize=9;fontColor=#888888;html=1;" edge="1" source="p2_po_1" target="p2_ag_1" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- Agent draft → System milestones -->
+        <mxCell id="e2" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" source="p2_ag_1" target="p2_sys_1" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- Agent draft → PO Gate (confirm) -->
+        <mxCell id="e3" value="review" style="edgeStyle=orthogonalEdgeStyle;fontSize=9;fontColor=#888888;html=1;" edge="1" source="p2_ag_1" target="p2_po_g" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- [3] Foundation: Agent ADRs → Builder accepts -->
+        <mxCell id="e4" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" source="p3_ag_1" target="p3_bl_1" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- Agent ADRs → System repo scaffold -->
+        <mxCell id="e5" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" source="p3_ag_1" target="p3_sys_1" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- Agent Graphify → System branch protection (context) -->
+        <mxCell id="e6" value="graph context" style="edgeStyle=orthogonalEdgeStyle;fontSize=9;fontColor=#9673a6;html=1;" edge="1" source="p3_ag_2" target="p3_sys_2" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- [4] Epic: PO idea → Agent epic-gen -->
+        <mxCell id="e7" value="idea" style="edgeStyle=orthogonalEdgeStyle;fontSize=9;fontColor=#888888;html=1;" edge="1" source="p4_po_1" target="p4_ag_1" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- Agent epic.md → System GitHub Issue -->
+        <mxCell id="e8" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" source="p4_ag_1" target="p4_sys_1" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- System GitHub Issue → PO gate (for review) -->
+        <mxCell id="e9" value="for review" style="edgeStyle=orthogonalEdgeStyle;fontSize=9;fontColor=#888888;html=1;" edge="1" source="p4_sys_1" target="p4_po_g" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- [5] Feature: Agent feature.md → System sub-issues -->
+        <mxCell id="e10" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" source="p5_ag_1" target="p5_sys_1" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- Agent feature.md → Builder gate -->
+        <mxCell id="e11" value="for review" style="edgeStyle=orthogonalEdgeStyle;fontSize=9;fontColor=#888888;html=1;" edge="1" source="p5_ag_1" target="p5_bl_g" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- [6] Build: Agent Spec → Builder review spec -->
+        <mxCell id="e12" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" source="p6_ag_2" target="p6_bl_1" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- Agent PR → System CI (triggers) -->
+        <mxCell id="e13" value="triggers CI" style="edgeStyle=orthogonalEdgeStyle;fontSize=9;fontColor=#888888;html=1;" edge="1" source="p6_ag_3" target="p6_sys_1" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- System CI result → Builder review PR -->
+        <mxCell id="e14" value="CI result" style="edgeStyle=orthogonalEdgeStyle;fontSize=9;fontColor=#888888;html=1;" edge="1" source="p6_sys_3" target="p6_bl_2" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- Builder merge gate → System CD -->
+        <mxCell id="e15" value="merge triggers CD" style="edgeStyle=orthogonalEdgeStyle;fontSize=9;fontColor=#888888;html=1;" edge="1" source="p6_bl_g" target="p7_sys_1" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- [8] Release: Agent release notes → PO gate -->
+        <mxCell id="e16" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" source="p8_ag_1" target="p8_po_g" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- PO gate → System deploy prod -->
+        <mxCell id="e17" value="approved" style="edgeStyle=orthogonalEdgeStyle;fontSize=9;fontColor=#888888;html=1;" edge="1" source="p8_po_g" target="p8_sys_1" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== LEGEND ===== -->
+        <mxCell id="leg_title" value="&lt;b&gt;LEGEND&lt;/b&gt;" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;fontSize=11;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="10" y="1422" width="1310" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg_human" value="HUMAN action&lt;br&gt;(PO or Builder)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="10" y="1460" width="155" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg_agent" value="AGENT action&lt;br&gt;(Skill: name in bold)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="180" y="1460" width="160" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg_auto" value="AUTOMATED (CI/CD)&lt;br&gt;no human or AI agent" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#999999;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="355" y="1460" width="165" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg_gate" value="◆ GATE — human decision&lt;br&gt;never skipped by agent" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="535" y="1450" width="170" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg_graph" value="Graphify /&lt;br&gt;Knowledge graph" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="720" y="1460" width="155" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg_mcp" value="MCP clients&lt;br&gt;(end-users of server)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="890" y="1460" width="155" height="45" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
