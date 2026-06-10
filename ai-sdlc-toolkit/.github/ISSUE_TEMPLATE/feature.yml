@@ -1,0 +1,46 @@
+name: Feature
+description: Create a new feature (deliverable within an epic)
+labels: ["feature"]
+body:
+  - type: input
+    id: feature-name
+    attributes:
+      label: Feature Name
+      placeholder: e.g., Core report generation
+    validations:
+      required: true
+  - type: input
+    id: parent-epic
+    attributes:
+      label: Parent Epic
+      description: Link to the parent epic issue
+      placeholder: "#101"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What This Feature Delivers
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: Which epic acceptance criterion does this satisfy?
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      value: |
+        - [ ] 
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: depends-on
+    attributes:
+      label: Depends On
+      description: Other features, ADRs, or infrastructure required
