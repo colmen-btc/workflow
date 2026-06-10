@@ -1,0 +1,47 @@
+name: ADR
+description: Propose an Architecture Decision Record
+labels: ["adr"]
+body:
+  - type: input
+    id: adr-title
+    attributes:
+      label: Decision Title
+      placeholder: e.g., Use event-driven async communication
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      options:
+        - Proposed
+        - Accepted
+        - Deprecated
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Why does this decision need to be made?
+    validations:
+      required: true
+  - type: textarea
+    id: decision
+    attributes:
+      label: Decision
+      description: What was decided? Be specific.
+    validations:
+      required: true
+  - type: textarea
+    id: consequences
+    attributes:
+      label: Consequences
+      description: What becomes easier? What becomes harder?
+    validations:
+      required: true
+  - type: textarea
+    id: applies-to
+    attributes:
+      label: Applies To
+      description: Which specs, features, or systems must reference this ADR?
