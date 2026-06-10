@@ -1,0 +1,59 @@
+name: Epic
+description: Create a new epic (product area)
+labels: ["epic"]
+body:
+  - type: input
+    id: epic-name
+    attributes:
+      label: Epic Name
+      placeholder: e.g., Retrieve → Analyze → Report
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem does this product area solve?
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What We're Building
+      description: Plain English description — no implementation detail
+    validations:
+      required: true
+  - type: input
+    id: who
+    attributes:
+      label: Who It's For
+      placeholder: Target user or role
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: Value
+      description: Business or user outcomes (one per line)
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Verifiable outcomes (use checkboxes)
+      value: |
+        - [ ] 
+        - [ ] 
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - P1
+        - P2
+        - P3
+    validations:
+      required: true
