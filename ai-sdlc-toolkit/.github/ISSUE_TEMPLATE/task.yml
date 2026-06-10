@@ -1,0 +1,41 @@
+name: Task
+description: Create a new task (engineering unit within a feature)
+labels: ["task"]
+body:
+  - type: input
+    id: task-name
+    attributes:
+      label: Task Name
+    validations:
+      required: true
+  - type: input
+    id: parent-feature
+    attributes:
+      label: Parent Feature
+      description: Link to the parent feature issue
+      placeholder: "#102"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What This Task Builds
+      description: Technical description
+    validations:
+      required: true
+  - type: textarea
+    id: definition-of-done
+    attributes:
+      label: Definition of Done
+      value: |
+        - [ ] 
+        - [ ] 
+        - [ ] Tests pass
+        - [ ] Code reviewed
+    validations:
+      required: true
+  - type: textarea
+    id: depends-on
+    attributes:
+      label: Depends On
+      description: Other tasks, ADRs, or services required
